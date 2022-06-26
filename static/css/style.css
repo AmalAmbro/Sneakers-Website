@@ -1,0 +1,286 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'kumbh_sansregular';
+}
+
+@font-face {
+    font-family: 'kumbh_sansregular';
+    src: url('../fonts/kumbhsans-variablefont_wght-webfont.woff2') format('woff2'),
+         url('../fonts/kumbhsans-variablefont_wght-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+.wrapper{
+    width: 70%;
+    margin: 0 auto;
+}
+
+header { 
+    width: 80%;
+    height: 100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid hsl(220, 14%, 75%);
+}
+
+header .logo { 
+    width: 120px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+header .logo a { 
+    width: 100%;
+}
+
+header .logo a img { 
+    width: 100%;
+}
+
+header .navigation { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 350px;
+    margin-right: 450px;
+    height: 100%;
+}
+
+header .navigation li { 
+    color: hsl(219, 9%, 45%);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    transition: all 0.1s ease-out 0.05s;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+header .navigation li:hover{
+    border-bottom: 3px solid hsl(26, 100%, 55%);
+}
+
+header .right { 
+    width: 100px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .right li { 
+    cursor: pointer;
+    width: 20px;
+}
+
+header .right li.avatar { 
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+}
+
+header .right li.avatar:hover { 
+    border: 2px solid hsl(26, 100%, 55%);
+    border-radius: 50%;
+}
+
+header .right li img { 
+    width: 100%;
+    height: 100%;
+}
+
+section.spotlight { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 690px;
+}
+
+section.spotlight div.left { 
+    width: 38%;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+section.spotlight div.left div.main { 
+    width: 100%;
+    height: 450px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+section.spotlight div.left div.main img { 
+    width: 100%;
+    height: 100%;
+}
+
+section.spotlight div.left ul.bottom { 
+    width: 100%;
+    margin: 0 auto;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section.spotlight div.left ul.bottom li { 
+    width: 17%;
+    height: 100%;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+section.spotlight div.left ul.bottom li img { 
+    width: 100%;
+    height: 100%;
+}
+
+section.spotlight div.right { 
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    letter-spacing: 0.2em;
+}   
+
+section.spotlight div.right p{
+    font-size: 15px;
+    font-weight: 900;
+    color: hsl(220, 14%, 75%);
+    text-align: justify;
+    width: 100%;
+    line-height: 1.5em;
+    margin-bottom: 30px;
+}
+
+section.spotlight div.right p.company { 
+    color: hsl(26, 100%, 55%);
+    font-size: 15px;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+
+section.spotlight div.right h1 { 
+    font-size: 40px;
+    font-weight: 900;
+    width: 450px;
+    margin-bottom: 40px;
+}
+
+
+section.spotlight div.right div.prices { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 170px;
+    height: 60px;
+    margin-bottom: 30px;
+}
+
+section.spotlight div.right div.prices h1.new { 
+    width: 70%;
+    font-size: 25px;
+    font-weight: 900;
+    margin-bottom: 0px;
+}
+
+section.spotlight div.right div.prices span { 
+    width: 30%;
+    height: 20px;
+    font-weight: 900;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: hsl(26, 100%, 55%);
+    background: hsl(25, 100%, 94%);
+    border-radius: 5px;
+}
+
+section.spotlight div.right div.prices h3.old { 
+    width: 40%;
+    text-decoration: line-through;
+    color: hsl(220, 14%, 75%);
+    font-size: 16px;
+}
+
+section.spotlight div.right div.cart-items { 
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+}
+
+section.spotlight div.right div.cart-items div.left { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    height: 100%;
+    width: 150px;
+    background: hsl(223, 64%, 98%);
+    border-radius: 10px;
+    margin-right: 50px;
+}
+
+section.spotlight div.right div.cart-items div.left a.operator { 
+    width: 40px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: hsl(26, 100%, 55%);
+    font-size: 25px;
+    font-weight: 700;
+}
+
+section.spotlight div.right div.cart-items div.left h5 { 
+    width: 40px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+}
+
+section.spotlight div.right div.cart-items div.right { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    background: hsl(26, 100%, 55%);
+    width: 350px;
+    height: 100%;
+    border-radius: 10px;
+}
+
+section.spotlight div.right div.cart-items div.right div.cartimage { 
+    width: 15px;
+    height: 15px;
+    margin-right: 20px;
+}
+
+section.spotlight div.right div.cart-items div.right div.cartimage img { 
+    width: 100%;
+    height: 100%;
+    filter: invert(1);
+}
+
+section.spotlight div.right div.cart-items div.right h4.white { 
+    color: #fff;
+}
+
