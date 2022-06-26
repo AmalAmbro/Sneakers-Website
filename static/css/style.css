@@ -140,9 +140,37 @@ section.spotlight div.left ul.bottom li {
     height: 100%;
     border-radius: 15px;
     overflow: hidden;
+    position: relative;
+    background: rgba(255, 255, 255, 0.5);
+    /* z-index: 1; */
 }
 
-section.spotlight div.left ul.bottom li img { 
+section.spotlight div.left ul.bottom li:hover {
+    border: 2px solid hsl(26, 100%, 55%);
+}
+
+section.spotlight div.left ul.bottom li div.thumbnail{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 3;
+    transition: all 0.1s ease-in-out;
+}
+section.spotlight div.left ul.bottom li div.thumbnail:hover{
+    z-index: 0;
+}
+
+
+section.spotlight div.left ul.bottom li div.filter{
+    background: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    z-index: 2;
+}
+
+section.spotlight div.left ul.bottom li div.thumbnail img { 
     width: 100%;
     height: 100%;
 }
